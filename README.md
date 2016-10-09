@@ -1,0 +1,2 @@
+# SCS
+Scala Content Server
