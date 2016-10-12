@@ -1,6 +1,5 @@
 package com.rraman.scs.controller
 
-import com.rraman.scs.controller.security.IfAuthorized
 import play.api.mvc._
 
 /**
@@ -11,11 +10,13 @@ class AdminController extends BaseController  {
   val validPassword = "password"
 
   def getLoginPage = Action { r =>
+    r.session.+("rt" -> "vt")
     Ok(views.html.adminLogin())
   }
 
-  def getLogin = IfAuthorized (parse.anyContent) { r =>
+  def getLogin = Action (parse.anyContent) { r =>
     val body = r.body.asFormUrlEncoded.get
+    val c = r.session.get("rt")
     val username = body.get("username").get(0)
     val password = body.get("password").get(0)
     (username,password) match {

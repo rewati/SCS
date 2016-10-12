@@ -1,8 +1,7 @@
-GET /com.rraman.scs.controller.FrontController.getHome
+GET /   com.rraman.scs.controller.FrontController.getHome
 GET /category/:id com.rraman.scs.controller.FrontController.getCategory(id: String)
 GET /category/:id/ com.rraman.scs.controller.FrontController.getCategory(id: String)
 GET /post/:yy/:mm/:dd/:title com.rraman.scs.controller.FrontController.getArticle(yy: Int,mm: Int,dd: Int,title: String)
 GET /post/:yy/:mm/:dd/:title/ com.rraman.scs.controller.FrontController.getArticle(yy: Int,mm: Int,dd: Int,title: String)
-
 GET /admin/login com.rraman.scs.controller.AdminController.getLoginPage
 POST /admin/login com.rraman.scs.controller.AdminController.getLogin

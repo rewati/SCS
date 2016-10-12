@@ -8,11 +8,11 @@ import play.api.mvc._
 class FrontController extends BaseController {
 
   def getHome = Action { r =>
-    Ok(views.html.index2())
+    Ok
   }
 
   def getCategory(id: String) = Action { r =>
-    Ok(views.html.index2())
+    Ok
   }
 
   def getArticle(yy: Int,mm: Int,dd: Int,title: String) = Action { r =>
