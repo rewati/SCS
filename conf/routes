@@ -5,3 +5,4 @@ GET /post/:yy/:mm/:dd/:title com.rraman.scs.controller.FrontController.getArticl
 GET /post/:yy/:mm/:dd/:title/ com.rraman.scs.controller.FrontController.getArticle(yy: Int,mm: Int,dd: Int,title: String)
 GET /admin/login com.rraman.scs.controller.AdminController.getLoginPage
 POST /admin/login com.rraman.scs.controller.AdminController.getLogin
+GET /admin/dashboard com.rraman.scs.controller.AdminController.dashBoard

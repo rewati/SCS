@@ -1,2 +1,3 @@
-logLevel := Level.Error
+
+logLevel := sbt.Level.Info
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.4")
